@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Leet Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+        <div class="quiz-container">
+
+            <div class="question-number">
+
+                <h3>Question <span class="question-num-value">1</span> of <span class="total-question"></span></h3>
+
+            </div>
+
+            <div class="question">
+
+            </div>
+
+            <div class="options">
+
+                <div id="0" class="option1" onclick="check(this)"></div>
+                <div id="1" class="option2" onclick="check(this)"></div>
+                <div id="2" class="option3" onclick="check(this)"></div>
+            
+            </div>
+
+            <div class="button">
+
+                <button type="button" class="btn" onclick="next()">Next Question</button>
+
+            </div>
+
+            <div class="answers-tracker">
+            
+            </div>
+
+        </div>
+
+        <div class="quiz-over">
+            <div class="box">
+
+            <h2> Ca c'est tres bien <br> You Got <span class="correct-answers"></span> out of <span class="total-question2"></span> 
+                answers correct! <br>
+                Ca c'est <span class="percentage"></span>
+
+            </h2>
+                    <!-- petite francais-->
+                    
+            <button type="button" onclick="tryAgain()">Another Go?</button>
+            </div>
+
+        </div>
+
+        <script src="quiz.js"></script>
+    
+</body>
+</html>
+
+
